@@ -7,13 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
+    @IBOutlet weak var outletText: UITextField!
+    @IBOutlet weak var outletLabel: UILabel!
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+    
     }
-
+    override func prepare(for segue:
+                          UIStoryboardSegue, sender: Any?)
+    {
+        let fts = segue.destination as! TwoViewController
+        
+        
+        
+    }
 
 }
 
