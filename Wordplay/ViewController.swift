@@ -13,6 +13,7 @@ class ViewController: UIViewController
     
     @IBOutlet weak var outletText: UITextField!
     @IBOutlet weak var outletLabel: UILabel!
+    var alphabet = ""
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,9 +26,19 @@ class ViewController: UIViewController
     {
         let fts = segue.destination as! TwoViewController
         
-        
+        if segue.identifier == "thisIsButton"
+        {
+            fts.something = alphabet
+        }
         
     }
+    
+    @IBAction func buttonAction(_ sender: Any)
+    {
+        alphabet = outletText.text ?? ""
+    
+    }
+    
 
 }
 

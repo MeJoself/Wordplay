@@ -7,13 +7,24 @@
 
 import UIKit
 
-class TwoViewController: UIViewController {
+class TwoViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var labelOutlets: UILabel!
+    var something = ""
+    override func viewDidLoad()
+    
+    {
         super.viewDidLoad()
+    
 
         // Do any additional setup after loading the view.
+    
+        labelOutlets.text = "My uncle wants to go to the " + something + "."
+    
+    
     }
+    
     
 
     /*
