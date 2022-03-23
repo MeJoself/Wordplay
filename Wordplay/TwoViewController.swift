@@ -10,8 +10,12 @@ import UIKit
 class TwoViewController: UIViewController
 {
 
+    @IBOutlet weak var labeledOutlet2: UILabel!
     @IBOutlet weak var labelOutlets: UILabel!
     var something = ""
+    var words = ""
+    var letters = ""
+    var actions = ""
     override func viewDidLoad()
     
     {
@@ -21,7 +25,7 @@ class TwoViewController: UIViewController
         // Do any additional setup after loading the view.
     
         labelOutlets.text = "My uncle wants to go to the " + something + "."
-    
+        labeledOutlet2.text = "   pillow with staff" + words + letters + actions
     
     }
     

@@ -11,9 +11,15 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var buttonOutlet: UIButton!
     
+    @IBOutlet weak var textOutlet3: UITextField!
+    @IBOutlet weak var textOutlet2: UITextField!
+    @IBOutlet weak var textOutlet: UITextField!
     @IBOutlet weak var outletText: UITextField!
     @IBOutlet weak var outletLabel: UILabel!
     var alphabet = ""
+    var nouns = ""
+    var adjectives = ""
+    var verbs = ""
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,6 +35,9 @@ class ViewController: UIViewController
         if segue.identifier == "thisIsButton"
         {
             fts.something = alphabet
+            fts.words = nouns
+            fts.actions = adjectives
+            fts.letters = verbs
         }
         
     }
@@ -36,7 +45,9 @@ class ViewController: UIViewController
     @IBAction func buttonAction(_ sender: Any)
     {
         alphabet = outletText.text ?? ""
-    
+        nouns = textOutlet.text ?? ""
+        adjectives = textOutlet2.text ?? ""
+        verbs = textOutlet3.text ?? ""
     }
     
 
