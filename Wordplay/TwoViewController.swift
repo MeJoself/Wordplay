@@ -25,7 +25,7 @@ class TwoViewController: UIViewController
         // Do any additional setup after loading the view.
     
         labelOutlets.text = "My uncle wants to go to the " + something + "."
-        labeledOutlet2.text = "   pillow with staff" + words + letters + actions
+        labeledOutlet2.text = words + actions + letters + "   pillow with staff"
     
     }
     
